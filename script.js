@@ -4,10 +4,10 @@ let windowLoaded = window.addEventListener("load", function () {
     //this.console.log("Window loaded");
     this.fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function(response){
         response.json().then(function(json){
-            console.log(json[0].firstName)
+            //console.log(json[0].firstName)
             const div = document.getElementById("container");
             for(let item in json){
-                console.log(item)
+                //console.log(item)
                 div.innerHTML += `
                     <div class="astronaut">
                         <div class="bio">
@@ -23,7 +23,7 @@ let windowLoaded = window.addEventListener("load", function () {
                 `;
             };
 
-            console.log(json);
+            //console.log(json);
         });
         //console.log(response);
     });
